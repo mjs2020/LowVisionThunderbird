@@ -1,0 +1,141 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+/* set default namespace to XUL */
+
+
+/*
+Notes:
+Credits:
+http://www.eriwen.com/css/tweaking-thunderbirds-chrome/;
+http://www.linnhe2.free-online.co.uk/thunderbird/chrome.html
+*/
+
+
+/* Global font */
+* {
+  font-size: 12pt !important;
+  font-family: "Arial Black" !important;
+}
+
+/* Change menu and dialog font sizes */
+menupopup > * {
+    font-size: 12px !important
+}
+
+/* Change font-size of email list */
+.tree-rows {
+    font-size: 24px !important;
+}
+
+
+
+/* Hide status bar */
+#status-bar {
+    display: none !important;
+}
+
+/* Get rid of the throbber */
+#throbber-box {
+    display: none !important;
+}
+
+/* Remove disabled toolbar buttons until enabled */
+toolbarbutton[disabled="true"] {
+    display: none !important;
+}
+
+
+/* All messages large font*/
+treechildren:-moz-tree-cell-text() {
+  font-size: 24px !important;
+}
+
+/* Read messages (black on white) as default */
+
+/* Unread messages (Yellow on Black) */
+treechildren:-moz-tree-cell-text(unread) {
+    color: #ebff00 !important;
+}
+treechildren::-moz-tree-cell(unread) {
+    background-color: #000 !important;
+}
+
+/* Selected messages (white on dark red) */
+treechildren:-moz-tree-cell-text(selected) {
+    color: #fff !important;
+}
+treechildren::-moz-tree-cell(selected) {
+    background-color: #a50000 !important;
+}
+
+#MsgHeadersToolbar {
+  font-size: 24px !important;
+}
+
+/* Change colors of replied messages */
+/*
+treechildren:-moz-tree-cell-text(replied) {
+    color: #003300 !important;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Folder pane(color/text) and Message pane(color) */
+/*
+treechildren {
+    background-color: #2D2D2D !important;
+}
+*/
+
+/* change Message Pane text */
+/*
+treechildren:-moz-tree-cell-text(unread) {
+    font-size: 10px !important;
+    font-family: "Times New Roman" !important;
+    font-weight: bold !important;
+    color: #D50000 !important
+}
+treechildren:-moz-tree-cell-text(read) {
+    font-size: 10px !important;
+    font-family: "Times New Roman" !important;
+    font-weight: bold !important;
+}
+*/
+
+/* Set no-label (default) bottom border */
+/*
+treechildren::-moz-tree-cell {
+    border-bottom: 1px solid #FFFFFF !important;
+}
+*/
+
+/* Make Sidebar header big and bold */
+/*
+#folderpane-title {
+    font-size: 1.2em !important;
+    font-weight: bold !important;
+}
+*/
+/* Hide Menus: menu_File, menu_Edit, menu_View, messageMenu, ltnCalendarMenu, tasksMenu */
+/*
+#menu_File, #menu_Edit, #menu_View {
+    display: none !important;
+}*/
